@@ -1,0 +1,80 @@
+
+.delivery-dashboard {
+    min-height: 100vh;
+    background: #f8f9fb;
+    padding: 40px 7%;
+}
+
+.delivery-header {
+    margin-bottom: 30px;
+}
+
+.delivery-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.delivery-header p {
+    color: #777;
+}
+
+.delivery-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.delivery-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.delivery-card h3 {
+    margin-bottom: 18px;
+}
+
+.delivery-card p {
+    margin: 12px 0;
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+.delivery-card button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.delivery-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.delivery-success {
+    color: #15803d;
+    margin-bottom: 15px;
+}
+
+.delivery-error {
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+.no-deliveries {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .delivery-list {
+        grid-template-columns: 1fr;
+    }
+}

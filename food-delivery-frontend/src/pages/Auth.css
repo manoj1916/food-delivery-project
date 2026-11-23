@@ -1,0 +1,340 @@
+
+/* =================================
+   AUTH PAGE BACKGROUND
+================================= */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    font-family: Arial, sans-serif;
+}
+
+/* =================================
+   AUTH CARD
+================================= */
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =================================
+   LOGO
+================================= */
+
+.auth-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: #ea580c;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.auth-logo:hover {
+    color: #c2410c;
+}
+
+/* =================================
+   HEADINGS
+================================= */
+
+.auth-card h1 {
+    margin: 0 0 8px;
+    color: #1f2937;
+    font-size: 32px;
+    font-weight: 750;
+}
+
+.auth-subtitle {
+    margin: 0 0 25px;
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-heading h1 {
+    margin-bottom: 10px;
+}
+
+.auth-heading p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =================================
+   FORM
+================================= */
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-card form label,
+.auth-form-group label {
+    display: block;
+    margin-top: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auth-card form input,
+.auth-form-group input,
+.auth-form-group select,
+.auth-form-group textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #1f2937;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.auth-card form input:focus,
+.auth-form-group input:focus,
+.auth-form-group select:focus,
+.auth-form-group textarea:focus {
+    border-color: #ea580c;
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12);
+}
+
+.auth-card form input::placeholder,
+.auth-form-group input::placeholder {
+    color: #9ca3af;
+}
+
+/* =================================
+   FORM GROUPS - REGISTER
+================================= */
+
+.auth-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* =================================
+   PASSWORD FIELD - LOGIN
+================================= */
+
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.password-field button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.password-field button:hover {
+    color: #ea580c;
+    background: #fff7ed;
+}
+
+/* =================================
+   PASSWORD FIELD - REGISTER
+================================= */
+
+.auth-password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-password-wrapper input {
+    padding-right: 48px;
+}
+
+.auth-password-toggle {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.auth-password-toggle:hover {
+    color: #ea580c;
+}
+
+/* =================================
+   ERROR AND SUCCESS
+================================= */
+
+.auth-error,
+.auth-success {
+    padding: 12px 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.auth-error {
+    color: #b91c1c;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.auth-success {
+    color: #15803d;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+}
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.auth-submit {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 15px;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #ea580c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-submit:hover {
+    background: #c2410c;
+    transform: translateY(-1px);
+}
+
+.auth-submit:disabled {
+    background: #fdba74;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =================================
+   REGISTER BUTTON
+================================= */
+
+.auth-submit-btn {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 15px;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #ea580c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-submit-btn:hover {
+    background: #c2410c;
+    transform: translateY(-1px);
+}
+
+.auth-submit-btn:disabled {
+    background: #fdba74;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.auth-footer {
+    margin-top: 28px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.auth-footer a {
+    color: #ea580c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: #c2410c;
+    text-decoration: underline;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 480px) {
+    .auth-page {
+        padding: 20px 14px;
+    }
+
+    .auth-card {
+        padding: 28px 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 27px;
+    }
+
+    .auth-logo {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,164 @@
+
+.orders-page {
+    max-width: 1050px;
+    margin: 45px auto;
+    padding: 0 25px;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.orders-header h1 {
+    margin-bottom: 8px;
+}
+
+.orders-header p {
+    color: #777;
+}
+
+.orders-header a {
+    padding: 11px 17px;
+    background: #f15a24;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.orders-list {
+    display: grid;
+    gap: 20px;
+}
+
+.order-card {
+    padding: 22px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-id {
+    margin-top: 7px;
+    color: #888;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.status-badge {
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #fff1e8;
+    color: #d94b19;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-badge.delivered {
+    background: #e8f5e9;
+    color: #16833d;
+}
+
+.status-badge.cancelled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.order-food-items {
+    padding: 18px 0;
+    color: #555;
+    line-height: 1.9;
+}
+
+.order-details-row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+.order-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.order-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pay-btn {
+    background: #16833d;
+    color: white;
+}
+
+.cancel-btn {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.orders-success,
+.orders-error {
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+}
+
+.orders-success {
+    background: #e8f5e9;
+    color: #16833d;
+}
+
+.orders-error {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.orders-message,
+.no-orders {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.no-orders p {
+    color: #777;
+    margin: 12px 0 20px;
+}
+
+.no-orders a {
+    color: #f15a24;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .orders-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .order-card {
+        padding: 16px;
+    }
+
+    .order-card-header {
+        flex-direction: column;
+    }
+}

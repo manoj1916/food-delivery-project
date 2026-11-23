@@ -1,0 +1,524 @@
+
+.owner-dashboard {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px 50px;
+}
+
+.owner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff4e8;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.owner-header h1 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.owner-header p {
+    color: #666;
+}
+
+.owner-subtitle {
+    color: #e87520 !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.owner-section {
+    background: white;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.owner-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.owner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+
+.owner-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.owner-form input,
+.owner-form textarea,
+.owner-inline-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font: inherit;
+}
+
+.owner-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.owner-primary-btn,
+.owner-open-btn,
+.owner-close-btn,
+.owner-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 17px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.owner-primary-btn {
+    background: #e87520;
+    color: white;
+}
+
+.owner-primary-btn:hover {
+    background: #cf6015;
+}
+
+.owner-form > .owner-primary-btn {
+    margin-top: 12px;
+    align-self: flex-start;
+}
+
+.restaurant-status {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.restaurant-status p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.owner-open-btn {
+    background: #16834a;
+    color: white;
+}
+
+.owner-close-btn {
+    background: #d94848;
+    color: white;
+}
+
+.owner-section-heading,
+.owner-category-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.owner-section-heading p {
+    color: #777;
+    margin-top: -10px;
+}
+
+.owner-section-heading h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.owner-heading-icon {
+    flex-shrink: 0;
+}
+
+.owner-inline-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.owner-inline-form input {
+    flex: 1;
+}
+
+.owner-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.owner-category {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.owner-category-heading h3 {
+    margin: 0;
+}
+
+.owner-delete-btn,
+.owner-food-actions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    color: #d94848;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.owner-food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.owner-food-item p {
+    color: #777;
+    margin: 5px 0;
+}
+
+.owner-food-item span {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.owner-food-item small {
+    color: #16834a;
+}
+
+.owner-food-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.owner-food-actions button {
+    color: #444;
+}
+
+.owner-add-food-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 15px;
+    padding: 9px 13px;
+    border: 1px solid #e87520;
+    background: white;
+    color: #e87520;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.owner-empty {
+    color: #888;
+    padding: 10px 0;
+}
+
+.owner-success,
+.owner-error {
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.owner-success {
+    background: #e8f7ed;
+    color: #176b39;
+}
+
+.owner-error {
+    background: #fdeaea;
+    color: #a52a2a;
+}
+
+.owner-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.owner-cancel-btn {
+    background: #eee;
+    color: #333;
+}
+
+.owner-loading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Owner Orders Management */
+
+.owner-refresh-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.owner-refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.owner-no-orders {
+    text-align: center;
+    padding: 40px 15px;
+    color: #777;
+}
+
+.owner-no-orders svg {
+    color: #e87520;
+}
+
+.owner-no-orders h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.owner-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.owner-order-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+}
+
+.owner-order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.owner-order-top h3 {
+    margin: 0 0 5px;
+}
+
+.owner-order-top p {
+    margin: 0 0 5px;
+    color: #555;
+}
+
+.owner-order-top small {
+    color: #888;
+}
+
+.owner-order-status {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #fff1dc;
+    color: #a45b0c;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.owner-order-status.confirmed,
+.owner-order-status.delivered {
+    background: #e8f7ed;
+    color: #176b39;
+}
+
+.owner-order-status.preparing {
+    background: #eaf2ff;
+    color: #2457a6;
+}
+
+.owner-order-status.out_for_delivery {
+    background: #f0eaff;
+    color: #6941a5;
+}
+
+.owner-order-status.cancelled {
+    background: #fdeaea;
+    color: #a52a2a;
+}
+
+.owner-order-customer,
+.owner-order-items {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.owner-order-customer h4,
+.owner-order-items h4 {
+    margin: 0 0 10px;
+}
+
+.owner-order-customer p {
+    margin: 6px 0;
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+.owner-order-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 7px 0;
+    color: #555;
+}
+
+.owner-order-item strong {
+    color: #333;
+    white-space: nowrap;
+}
+
+.owner-order-payment {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    color: #555;
+}
+
+.owner-order-payment > strong {
+    color: #16834a;
+    font-size: 17px;
+}
+
+.owner-assigned-partner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    padding: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.owner-assigned-partner svg {
+    flex-shrink: 0;
+    color: #e87520;
+}
+
+.owner-assign-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.owner-assign-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font: inherit;
+}
+
+.owner-assign-btn,
+.owner-status-btn {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.owner-assign-btn {
+    background: #333;
+    color: white;
+}
+
+.owner-status-btn {
+    background: #e87520;
+    color: white;
+}
+
+.owner-assign-btn:disabled,
+.owner-status-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.owner-order-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.owner-order-actions small {
+    color: #a45b0c;
+}
+
+@media (max-width: 650px) {
+    .owner-header,
+    .restaurant-status,
+    .owner-category-heading,
+    .owner-food-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .owner-inline-form {
+        flex-direction: column;
+    }
+
+    .owner-food-actions {
+        margin-top: 10px;
+    }
+
+    .owner-section-heading {
+        align-items: flex-start;
+    }
+
+    .owner-order-top {
+        flex-direction: column;
+    }
+
+    .owner-assign-form {
+        flex-direction: column;
+    }
+
+    .owner-assign-btn {
+        width: 100%;
+    }
+
+    .owner-order-payment {
+        flex-direction: column;
+    }
+}

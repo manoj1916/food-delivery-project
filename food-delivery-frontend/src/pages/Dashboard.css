@@ -1,0 +1,155 @@
+
+.customer-dashboard {
+    min-height: 100vh;
+    background: #f8f9fb;
+    padding-bottom: 50px;
+}
+
+.dashboard-hero {
+    background: linear-gradient(120deg, #ff6b35, #ff914d);
+    padding: 65px 7%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-tag {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero-content > p {
+    font-size: 17px;
+}
+
+.dashboard-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #333;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin-top: 28px;
+    max-width: 650px;
+}
+
+.dashboard-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.dashboard-shortcuts {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.shortcut-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: white;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.shortcut-card:hover {
+    transform: translateY(-4px);
+}
+
+.shortcut-card svg {
+    color: #ff6b35;
+}
+
+.shortcut-card h3 {
+    margin: 0 0 6px;
+}
+
+.shortcut-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.restaurant-section {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+.dashboard-restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.dashboard-message {
+    padding: 25px 0;
+    color: #555;
+}
+
+.dashboard-error {
+    color: #dc2626;
+    padding: 15px 0;
+}
+
+.dashboard-container {
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-hero {
+        padding: 45px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .dashboard-shortcuts {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-restaurant-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard-restaurant-grid {
+        grid-template-columns: 1fr;
+    }
+}
